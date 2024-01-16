@@ -1,0 +1,133 @@
+loading file tokenizer.model from cache at /home/kongrui/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/8cca527612d856d7d32bd94f8103728d614eb852/tokenizer.model
+loading file tokenizer.json from cache at /home/kongrui/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/8cca527612d856d7d32bd94f8103728d614eb852/tokenizer.json
+loading file added_tokens.json from cache at None
+loading file special_tokens_map.json from cache at /home/kongrui/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/8cca527612d856d7d32bd94f8103728d614eb852/special_tokens_map.json
+loading file tokenizer_config.json from cache at /home/kongrui/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/8cca527612d856d7d32bd94f8103728d614eb852/tokenizer_config.json
+loading configuration file config.json from cache at /home/kongrui/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/8cca527612d856d7d32bd94f8103728d614eb852/config.json
+Model config LlamaConfig {
+  "_name_or_path": "meta-llama/Llama-2-7b-hf",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.0.dev0",
+  "use_cache": true,
+  "vocab_size": 32000
+}
+
+loading weights file model.safetensors from cache at /home/kongrui/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/8cca527612d856d7d32bd94f8103728d614eb852/model.safetensors.index.json
+Instantiating LlamaForCausalLM model under default dtype torch.bfloat16.
+Generate config GenerationConfig {
+  "bos_token_id": 1,
+  "eos_token_id": 2
+}
+
+Detected 4-bit loading: activating 4-bit loading for this model
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+bin /home/kongrui/.conda/envs/SKqlora/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda117.so
+CUDA SETUP: CUDA runtime path found: /home/kongrui/.conda/envs/SKqlora/lib/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 8.0
+CUDA SETUP: Detected CUDA version 117
+CUDA SETUP: Loading binary /home/kongrui/.conda/envs/SKqlora/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda117.so...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.66s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  2.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.14s/it]
+All model checkpoint weights were used when initializing LlamaForCausalLM.
+
+All the weights of LlamaForCausalLM were initialized from the model checkpoint at meta-llama/Llama-2-7b-hf.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use LlamaForCausalLM for predictions without further training.
+loading configuration file generation_config.json from cache at /home/kongrui/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/8cca527612d856d7d32bd94f8103728d614eb852/generation_config.json
+Generate config GenerationConfig {
+  "bos_token_id": 1,
+  "do_sample": true,
+  "eos_token_id": 2,
+  "max_length": 4096,
+  "pad_token_id": 0,
+  "temperature": 0.6,
+  "top_p": 0.9
+}
+
+loading configuration file config.json from cache at /home/kongrui/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/8cca527612d856d7d32bd94f8103728d614eb852/config.json
+Model config LlamaConfig {
+  "_name_or_path": "meta-llama/Llama-2-7b-hf",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 4096,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.37.0.dev0",
+  "use_cache": true,
+  "vocab_size": 32000
+}
+
+loading weights file model.safetensors from cache at /home/kongrui/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/8cca527612d856d7d32bd94f8103728d614eb852/model.safetensors.index.json
+Instantiating LlamaForCausalLM model under default dtype torch.bfloat16.
+Generate config GenerationConfig {
+  "bos_token_id": 1,
+  "eos_token_id": 2
+}
+
+Detected 4-bit loading: activating 4-bit loading for this model
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.49s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.23s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.57s/it]
+All model checkpoint weights were used when initializing LlamaForCausalLM.
+
+All the weights of LlamaForCausalLM were initialized from the model checkpoint at meta-llama/Llama-2-7b-hf.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use LlamaForCausalLM for predictions without further training.
+loading configuration file generation_config.json from cache at /home/kongrui/.cache/huggingface/hub/models--meta-llama--Llama-2-7b-hf/snapshots/8cca527612d856d7d32bd94f8103728d614eb852/generation_config.json
+Generate config GenerationConfig {
+  "bos_token_id": 1,
+  "do_sample": true,
+  "eos_token_id": 2,
+  "max_length": 4096,
+  "pad_token_id": 0,
+  "temperature": 0.6,
+  "top_p": 0.9
+}
+
+Using the latest cached version of the module from /home/kongrui/.cache/huggingface/modules/datasets_modules/datasets/wikitext/a241db52902eaf2c6aa732210bead40c090019a499ceb13bcbfa3f8ab646a126 (last modified on Tue Jan  2 14:20:12 2024) since it couldn't be found locally at wikitext, or remotely on the Hugging Face Hub.
+01/03/2024 16:53:27 - WARNING - datasets.load - Using the latest cached version of the module from /home/kongrui/.cache/huggingface/modules/datasets_modules/datasets/wikitext/a241db52902eaf2c6aa732210bead40c090019a499ceb13bcbfa3f8ab646a126 (last modified on Tue Jan  2 14:20:12 2024) since it couldn't be found locally at wikitext, or remotely on the Hugging Face Hub.
+01/03/2024 16:53:28 - INFO - args - ***** Running training *****
+01/03/2024 16:53:28 - INFO - args -   Num Epochs = 100
+01/03/2024 16:53:28 - INFO - args -   Instantaneous batch size per device = 2
+01/03/2024 16:53:28 - INFO - args -   Total optimization steps = 1444100
+  0%|          | 0/1444100 [00:00<?, ?it/s]loss:7.1621, loss_mean:7.1621:   0%|          | 0/1444100 [00:01<?, ?it/s]loss:7.1621, loss_mean:7.1621:   0%|          | 1/1444100 [00:01<763:01:01,  1.90s/it]loss:8.8363, loss_mean:7.9992:   0%|          | 1/1444100 [00:03<763:01:01,  1.90s/it]loss:8.8363, loss_mean:7.9992:   0%|          | 2/1444100 [00:03<594:17:20,  1.48s/it]loss:6.3702, loss_mean:7.4562:   0%|          | 2/1444100 [00:04<594:17:20,  1.48s/it]loss:6.3702, loss_mean:7.4562:   0%|          | 3/1444100 [00:04<552:42:46,  1.38s/it]loss:6.4592, loss_mean:7.2070:   0%|          | 3/1444100 [00:05<552:42:46,  1.38s/it]loss:6.4592, loss_mean:7.2070:   0%|          | 4/1444100 [00:05<527:51:27,  1.32s/it]loss:6.3895, loss_mean:7.0435:   0%|          | 4/1444100 [00:06<527:51:27,  1.32s/it]loss:6.3895, loss_mean:7.0435:   0%|          | 5/1444100 [00:06<512:34:07,  1.28s/it]loss:6.5039, loss_mean:6.9535:   0%|          | 5/1444100 [00:08<512:34:07,  1.28s/it]loss:6.5039, loss_mean:6.9535:   0%|          | 6/1444100 [00:08<506:43:30,  1.26s/it]loss:8.8627, loss_mean:7.2263:   0%|          | 6/1444100 [00:09<506:43:30,  1.26s/it]loss:8.8627, loss_mean:7.2263:   0%|          | 7/1444100 [00:09<499:12:53,  1.24s/it]loss:7.1859, loss_mean:7.2212:   0%|          | 7/1444100 [00:10<499:12:53,  1.24s/it]loss:7.1859, loss_mean:7.2212:   0%|          | 8/1444100 [00:10<493:31:16,  1.23s/it]loss:6.1536, loss_mean:7.1026:   0%|          | 8/1444100 [00:11<493:31:16,  1.23s/it]loss:6.1536, loss_mean:7.1026:   0%|          | 9/1444100 [00:11<490:35:27,  1.22s/it]loss:5.3313, loss_mean:6.9255:   0%|          | 9/1444100 [00:12<490:35:27,  1.22s/it]loss:5.3313, loss_mean:6.9255:   0%|          | 10/1444100 [00:12<492:07:30,  1.23s/it]loss:6.3647, loss_mean:6.8745:   0%|          | 10/1444100 [00:14<492:07:30,  1.23s/it]loss:6.3647, loss_mean:6.8745:   0%|          | 11/1444100 [00:14<491:19:15,  1.22s/it]loss:5.1859, loss_mean:6.7338:   0%|          | 11/1444100 [00:15<491:19:15,  1.22s/it]loss:5.1859, loss_mean:6.7338:   0%|          | 12/1444100 [00:15<512:23:28,  1.28s/it]loss:8.4171, loss_mean:6.8633:   0%|          | 12/1444100 [00:16<512:23:28,  1.28s/it]loss:8.4171, loss_mean:6.8633:   0%|          | 13/1444100 [00:16<498:31:11,  1.24s/it]loss:5.4678, loss_mean:6.7636:   0%|          | 13/1444100 [00:17<498:31:11,  1.24s/it]loss:5.4678, loss_mean:6.7636:   0%|          | 14/1444100 [00:17<494:31:47,  1.23s/it]loss:4.9816, loss_mean:6.6448:   0%|          | 14/1444100 [00:19<494:31:47,  1.23s/it]loss:4.9816, loss_mean:6.6448:   0%|          | 15/1444100 [00:19<490:30:20,  1.22s/it]loss:6.0211, loss_mean:6.6058:   0%|          | 15/1444100 [00:20<490:30:20,  1.22s/it]loss:6.0211, loss_mean:6.6058:   0%|          | 16/1444100 [00:20<491:50:48,  1.23s/it]loss:6.3986, loss_mean:6.5936:   0%|          | 16/1444100 [00:21<491:50:48,  1.23s/it]loss:6.3986, loss_mean:6.5936:   0%|          | 17/1444100 [00:21<490:35:02,  1.22s/it]loss:5.8842, loss_mean:6.5542:   0%|          | 17/1444100 [00:22<490:35:02,  1.22s/it]loss:5.8842, loss_mean:6.5542:   0%|          | 18/1444100 [00:22<488:50:31,  1.22s/it]loss:5.9466, loss_mean:6.5222:   0%|          | 18/1444100 [00:23<488:50:31,  1.22s/it]loss:5.9466, loss_mean:6.5222:   0%|          | 19/1444100 [00:23<485:43:18,  1.21s/it]loss:5.3534, loss_mean:6.4638:   0%|          | 19/1444100 [00:25<485:43:18,  1.21s/it]loss:5.3534, loss_mean:6.4638:   0%|          | 20/1444100 [00:25<485:37:35,  1.21s/it]loss:5.8393, loss_mean:6.4340:   0%|          | 20/1444100 [00:26<485:37:35,  1.21s/it]loss:5.8393, loss_mean:6.4340:   0%|          | 21/1444100 [00:26<483:27:00,  1.21s/it]loss:6.6186, loss_mean:6.4424:   0%|          | 21/1444100 [00:27<483:27:00,  1.21s/it]loss:6.6186, loss_mean:6.4424:   0%|          | 22/1444100 [00:27<483:40:26,  1.21s/it]loss:7.1374, loss_mean:6.4727:   0%|          | 22/1444100 [00:28<483:40:26,  1.21s/it]loss:7.1374, loss_mean:6.4727:   0%|          | 23/1444100 [00:28<483:14:49,  1.20s/it]loss:6.0908, loss_mean:6.4567:   0%|          | 23/1444100 [00:29<483:14:49,  1.20s/it]loss:6.0908, loss_mean:6.4567:   0%|          | 24/1444100 [00:29<483:22:24,  1.21s/it]loss:8.1835, loss_mean:6.5258:   0%|          | 24/1444100 [00:31<483:22:24,  1.21s/it]loss:8.1835, loss_mean:6.5258:   0%|          | 25/1444100 [00:31<481:32:15,  1.20s/it]loss:7.2443, loss_mean:6.5534:   0%|          | 25/1444100 [00:32<481:32:15,  1.20s/it]loss:7.2443, loss_mean:6.5534:   0%|          | 26/1444100 [00:32<480:00:31,  1.20s/it]loss:8.1391, loss_mean:6.6122:   0%|          | 26/1444100 [00:33<480:00:31,  1.20s/it]loss:8.1391, loss_mean:6.6122:   0%|          | 27/1444100 [00:33<480:14:44,  1.20s/it]loss:5.9609, loss_mean:6.5889:   0%|          | 27/1444100 [00:34<480:14:44,  1.20s/it]loss:5.9609, loss_mean:6.5889:   0%|          | 28/1444100 [00:34<481:22:29,  1.20s/it]loss:5.0093, loss_mean:6.5344:   0%|          | 28/1444100 [00:35<481:22:29,  1.20s/it]loss:5.0093, loss_mean:6.5344:   0%|          | 29/1444100 [00:35<481:08:19,  1.20s/it]loss:6.3511, loss_mean:6.5283:   0%|          | 29/1444100 [00:37<481:08:19,  1.20s/it]loss:6.3511, loss_mean:6.5283:   0%|          | 30/1444100 [00:37<482:11:17,  1.20s/it]loss:5.9956, loss_mean:6.5111:   0%|          | 30/1444100 [00:38<482:11:17,  1.20s/it]loss:5.9956, loss_mean:6.5111:   0%|          | 31/1444100 [00:38<481:48:27,  1.20s/it]loss:7.0535, loss_mean:6.5281:   0%|          | 31/1444100 [00:39<481:48:27,  1.20s/it]loss:7.0535, loss_mean:6.5281:   0%|          | 32/1444100 [00:39<483:49:46,  1.21s/it]loss:5.6299, loss_mean:6.5009:   0%|          | 32/1444100 [00:40<483:49:46,  1.21s/it]loss:5.6299, loss_mean:6.5009:   0%|          | 33/1444100 [00:40<482:00:12,  1.20s/it]loss:4.6516, loss_mean:6.4465:   0%|          | 33/1444100 [00:41<482:00:12,  1.20s/it]loss:4.6516, loss_mean:6.4465:   0%|          | 34/1444100 [00:41<483:48:05,  1.21s/it]loss:4.8263, loss_mean:6.4002:   0%|          | 34/1444100 [00:43<483:48:05,  1.21s/it]loss:4.8263, loss_mean:6.4002:   0%|          | 35/1444100 [00:43<484:03:27,  1.21s/it]loss:5.7939, loss_mean:6.3834:   0%|          | 35/1444100 [00:44<484:03:27,  1.21s/it]loss:5.7939, loss_mean:6.3834:   0%|          | 36/1444100 [00:44<481:47:36,  1.20s/it]loss:5.2372, loss_mean:6.3524:   0%|          | 36/1444100 [00:45<481:47:36,  1.20s/it]loss:5.2372, loss_mean:6.3524:   0%|          | 37/1444100 [00:45<483:28:20,  1.21s/it]loss:5.6685, loss_mean:6.3344:   0%|          | 37/1444100 [00:46<483:28:20,  1.21s/it]loss:5.6685, loss_mean:6.3344:   0%|          | 38/1444100 [00:46<484:35:44,  1.21s/it]loss:5.3953, loss_mean:6.3103:   0%|          | 38/1444100 [00:47<484:35:44,  1.21s/it]loss:5.3953, loss_mean:6.3103:   0%|          | 39/1444100 [00:47<485:27:43,  1.21s/it]loss:6.7475, loss_mean:6.3212:   0%|          | 39/1444100 [00:49<485:27:43,  1.21s/it]loss:6.7475, loss_mean:6.3212:   0%|          | 40/1444100 [00:49<484:04:48,  1.21s/it]loss:5.5594, loss_mean:6.3027:   0%|          | 40/1444100 [00:50<484:04:48,  1.21s/it]loss:5.5594, loss_mean:6.3027:   0%|          | 41/1444100 [00:50<483:54:17,  1.21s/it]loss:5.2126, loss_mean:6.2767:   0%|          | 41/1444100 [00:51<483:54:17,  1.21s/it]loss:5.2126, loss_mean:6.2767:   0%|          | 42/1444100 [00:51<504:34:22,  1.26s/it]loss:6.2200, loss_mean:6.2754:   0%|          | 42/1444100 [00:52<504:34:22,  1.26s/it]loss:6.2200, loss_mean:6.2754:   0%|          | 43/1444100 [00:52<498:52:25,  1.24s/it]loss:4.7586, loss_mean:6.2409:   0%|          | 43/1444100 [00:54<498:52:25,  1.24s/it]loss:4.7586, loss_mean:6.2409:   0%|          | 44/1444100 [00:54<496:06:57,  1.24s/it]loss:7.3097, loss_mean:6.2647:   0%|          | 44/1444100 [00:55<496:06:57,  1.24s/it]loss:7.3097, loss_mean:6.2647:   0%|          | 45/1444100 [00:55<492:13:19,  1.23s/it]loss:4.6292, loss_mean:6.2291:   0%|          | 45/1444100 [00:56<492:13:19,  1.23s/it]loss:4.6292, loss_mean:6.2291:   0%|          | 46/1444100 [00:56<487:56:19,  1.22s/it]loss:4.6892, loss_mean:6.1963:   0%|          | 46/1444100 [00:57<487:56:19,  1.22s/it]loss:4.6892, loss_mean:6.1963:   0%|          | 47/1444100 [00:57<488:20:29,  1.22s/it]loss:5.4661, loss_mean:6.1811:   0%|          | 47/1444100 [00:59<488:20:29,  1.22s/it]loss:5.4661, loss_mean:6.1811:   0%|          | 48/1444100 [00:59<489:32:01,  1.22s/it]loss:6.0710, loss_mean:6.1789:   0%|          | 48/1444100 [01:00<489:32:01,  1.22s/it]loss:6.0710, loss_mean:6.1789:   0%|          | 49/1444100 [01:00<487:14:18,  1.21s/it]loss:6.0569, loss_mean:6.1764:   0%|          | 49/1444100 [01:01<487:14:18,  1.21s/it]loss:6.0569, loss_mean:6.1764:   0%|          | 50/1444100 [01:01<481:06:24,  1.20s/it]loss:4.5448, loss_mean:6.1444:   0%|          | 50/1444100 [01:02<481:06:24,  1.20s/it]loss:4.5448, loss_mean:6.1444:   0%|          | 51/1444100 [01:02<481:53:34,  1.20s/it]loss:4.7010, loss_mean:6.1167:   0%|          | 51/1444100 [01:03<481:53:34,  1.20s/it]loss:4.7010, loss_mean:6.1167:   0%|          | 52/1444100 [01:03<485:20:30,  1.21s/it]loss:4.5517, loss_mean:6.0872:   0%|          | 52/1444100 [01:05<485:20:30,  1.21s/it]loss:4.5517, loss_mean:6.0872:   0%|          | 53/1444100 [01:05<483:37:42,  1.21s/it]loss:5.3232, loss_mean:6.0730:   0%|          | 53/1444100 [01:06<483:37:42,  1.21s/it]loss:5.3232, loss_mean:6.0730:   0%|          | 54/1444100 [01:06<483:50:30,  1.21s/it]loss:5.2817, loss_mean:6.0586:   0%|          | 54/1444100 [01:07<483:50:30,  1.21s/it]loss:5.2817, loss_mean:6.0586:   0%|          | 55/1444100 [01:07<485:05:25,  1.21s/it]loss:4.7118, loss_mean:6.0346:   0%|          | 55/1444100 [01:08<485:05:25,  1.21s/it]loss:4.7118, loss_mean:6.0346:   0%|          | 56/1444100 [01:08<484:39:04,  1.21s/it]loss:5.5570, loss_mean:6.0262:   0%|          | 56/1444100 [01:09<484:39:04,  1.21s/it]loss:5.5570, loss_mean:6.0262:   0%|          | 57/1444100 [01:09<481:36:02,  1.20s/it]loss:5.5044, loss_mean:6.0172:   0%|          | 57/1444100 [01:11<481:36:02,  1.20s/it]loss:5.5044, loss_mean:6.0172:   0%|          | 58/1444100 [01:11<483:54:16,  1.21s/it]loss:4.1907, loss_mean:5.9862:   0%|          | 58/1444100 [01:12<483:54:16,  1.21s/it]loss:4.1907, loss_mean:5.9862:   0%|          | 59/1444100 [01:12<482:52:10,  1.20s/it]loss:4.3690, loss_mean:5.9593:   0%|          | 59/1444100 [01:13<482:52:10,  1.20s/it]loss:4.3690, loss_mean:5.9593:   0%|          | 60/1444100 [01:13<485:39:15,  1.21s/it]loss:5.5015, loss_mean:5.9518:   0%|          | 60/1444100 [01:14<485:39:15,  1.21s/it]loss:5.5015, loss_mean:5.9518:   0%|          | 61/1444100 [01:14<503:36:51,  1.26s/it]loss:5.1668, loss_mean:5.9391:   0%|          | 61/1444100 [01:16<503:36:51,  1.26s/it]loss:5.1668, loss_mean:5.9391:   0%|          | 62/1444100 [01:16<500:35:41,  1.25s/it]loss:3.9476, loss_mean:5.9075:   0%|          | 62/1444100 [01:17<500:35:41,  1.25s/it]loss:3.9476, loss_mean:5.9075:   0%|          | 63/1444100 [01:17<501:42:47,  1.25s/it]loss:4.2891, loss_mean:5.8822:   0%|          | 63/1444100 [01:18<501:42:47,  1.25s/it]loss:4.2891, loss_mean:5.8822:   0%|          | 64/1444100 [01:18<496:11:25,  1.24s/it]loss:6.1084, loss_mean:5.8857:   0%|          | 64/1444100 [01:19<496:11:25,  1.24s/it]loss:6.1084, loss_mean:5.8857:   0%|          | 65/1444100 [01:19<489:50:01,  1.22s/it]loss:4.6833, loss_mean:5.8675:   0%|          | 65/1444100 [01:20<489:50:01,  1.22s/it]loss:4.6833, loss_mean:5.8675:   0%|          | 66/1444100 [01:20<487:22:53,  1.22s/it]loss:4.4984, loss_mean:5.8470:   0%|          | 66/1444100 [01:22<487:22:53,  1.22s/it]loss:4.4984, loss_mean:5.8470:   0%|          | 67/1444100 [01:22<486:26:10,  1.21s/it]loss:4.8822, loss_mean:5.8329:   0%|          | 67/1444100 [01:23<486:26:10,  1.21s/it]loss:4.8822, loss_mean:5.8329:   0%|          | 68/1444100 [01:23<482:50:04,  1.20s/it]loss:4.1878, loss_mean:5.8090:   0%|          | 68/1444100 [01:24<482:50:04,  1.20s/it]loss:4.1878, loss_mean:5.8090:   0%|          | 69/1444100 [01:24<479:52:09,  1.20s/it]loss:5.6674, loss_mean:5.8070:   0%|          | 69/1444100 [01:25<479:52:09,  1.20s/it]loss:5.6674, loss_mean:5.8070:   0%|          | 70/1444100 [01:25<479:11:09,  1.19s/it]loss:4.1742, loss_mean:5.7840:   0%|          | 70/1444100 [01:26<479:11:09,  1.19s/it]loss:4.1742, loss_mean:5.7840:   0%|          | 71/1444100 [01:26<481:33:56,  1.20s/it]loss:7.7045, loss_mean:5.8107:   0%|          | 71/1444100 [01:28<481:33:56,  1.20s/it]loss:7.7045, loss_mean:5.8107:   0%|          | 72/1444100 [01:28<479:05:33,  1.19s/it]loss:4.4507, loss_mean:5.7920:   0%|          | 72/1444100 [01:29<479:05:33,  1.19s/it]loss:4.4507, loss_mean:5.7920:   0%|          | 73/1444100 [01:29<479:21:23,  1.20s/it]loss:4.7304, loss_mean:5.7777:   0%|          | 73/1444100 [01:30<479:21:23,  1.20s/it]loss:4.7304, loss_mean:5.7777:   0%|          | 74/1444100 [01:30<479:51:36,  1.20s/it]loss:6.7754, loss_mean:5.7910:   0%|          | 74/1444100 [01:31<479:51:36,  1.20s/it]loss:6.7754, loss_mean:5.7910:   0%|          | 75/1444100 [01:31<478:00:37,  1.19s/it]loss:6.2814, loss_mean:5.7975:   0%|          | 75/1444100 [01:32<478:00:37,  1.19s/it]loss:6.2814, loss_mean:5.7975:   0%|          | 76/1444100 [01:32<480:04:27,  1.20s/it]loss:4.7001, loss_mean:5.7832:   0%|          | 76/1444100 [01:34<480:04:27,  1.20s/it]loss:4.7001, loss_mean:5.7832:   0%|          | 77/1444100 [01:34<482:23:42,  1.20s/it]loss:5.5375, loss_mean:5.7801:   0%|          | 77/1444100 [01:35<482:23:42,  1.20s/it]loss:5.5375, loss_mean:5.7801:   0%|          | 78/1444100 [01:35<482:03:39,  1.20s/it]loss:4.3398, loss_mean:5.7618:   0%|          | 78/1444100 [01:36<482:03:39,  1.20s/it]loss:4.3398, loss_mean:5.7618:   0%|          | 79/1444100 [01:36<481:52:48,  1.20s/it]loss:4.4299, loss_mean:5.7452:   0%|          | 79/1444100 [01:37<481:52:48,  1.20s/it]loss:4.4299, loss_mean:5.7452:   0%|          | 80/1444100 [01:37<485:57:35,  1.21s/it]loss:5.0479, loss_mean:5.7366:   0%|          | 80/1444100 [01:38<485:57:35,  1.21s/it]loss:5.0479, loss_mean:5.7366:   0%|          | 81/1444100 [01:38<487:34:18,  1.22s/it]loss:3.4079, loss_mean:5.7082:   0%|          | 81/1444100 [01:40<487:34:18,  1.22s/it]loss:3.4079, loss_mean:5.7082:   0%|          | 82/1444100 [01:40<489:45:05,  1.22s/it]loss:4.5816, loss_mean:5.6946:   0%|          | 82/1444100 [01:41<489:45:05,  1.22s/it]loss:4.5816, loss_mean:5.6946:   0%|          | 83/1444100 [01:41<490:33:50,  1.22s/it]loss:5.8668, loss_mean:5.6966:   0%|          | 83/1444100 [01:42<490:33:50,  1.22s/it]loss:5.8668, loss_mean:5.6966:   0%|          | 84/1444100 [01:42<487:29:12,  1.22s/it]loss:5.3146, loss_mean:5.6921:   0%|          | 84/1444100 [01:43<487:29:12,  1.22s/it]loss:5.3146, loss_mean:5.6921:   0%|          | 85/1444100 [01:43<504:15:50,  1.26s/it]
